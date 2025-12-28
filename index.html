@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>⚽ Football Game - Complete</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>⚽ Football Game</h1>
+<p class="subtitle">Score as many goals as you can!</p>
+
+<div class="game-container">
+  <canvas id="gameCanvas" width="800" height="500"></canvas>
+</div>
+
+<div class="controls">
+  <div class="control-group">
+    <h3>Movement</h3>
+    <p><strong>W</strong> - Up | <strong>S</strong> - Down | <strong>A</strong> - Left | <strong>D</strong> - Right</p>
+  </div>
+  
+  <div class="control-group">
+    <h3>Shooting</h3>
+    <p>Press <strong>R</strong> to SHOOT</p>
+    <p style="font-size: 0.9em; color: #aaa; margin-top: 5px;">Hold SPACE to charge power before pressing R</p>
+  </div>
+
+  <div class="power-container">
+    <label>Shot Power:</label>
+    <div class="power-bar">
+      <div id="powerBar" class="power-fill"></div>
+    </div>
+  </div>
+</div>
+
+<div class="instructions">
+  <h3>How to Play:</h3>
+  <ul>
+    <li>Use <strong>W, A, S, D</strong> keys to move your player (blue)</li>
+    <li>The ball follows your player automatically</li>
+    <li>Press <strong>R</strong> to shoot the ball toward the goal (yellow box)</li>
+    <li>Hold <strong>SPACE</strong> to charge more power, then press <strong>R</strong> to shoot</li>
+    <li>Press <strong>W</strong> or <strong>S</strong> while shooting to curve the ball up or down</li>
+    <li>Avoid offside - don't go past the defenders too early!</li>
+    <li>Red players are defenders, Orange is the goalkeeper</li>
+    <li>Score points by getting the ball in the goal!</li>
+  </ul>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
